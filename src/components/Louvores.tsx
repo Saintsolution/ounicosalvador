@@ -8,14 +8,14 @@ interface Short {
 }
 
 const shorts: Short[] = [
-  { id: 'ByP7ORTp7nQ', title: 'Louvor 01', artist: 'O Único Salvador' },
-  { id: 'z2CqMOSBx5M', title: 'Louvor 02', artist: 'O Único Salvador' },
-  { id: '3ChKYq6iBdw', title: 'Louvor 03', artist: 'O Único Salvador' },
-  { id: 'aBlwnOwSmQs', title: 'Louvor 04', artist: 'O Único Salvador' },
-  { id: '90ROZft3egg', title: 'Louvor 05', artist: 'O Único Salvador' },
-  { id: 'zrC3CXqaouw', title: 'Louvor 06', artist: 'O Único Salvador' },
-  { id: 'yjvDi6sX7cU', title: 'Louvor 07', artist: 'O Único Salvador' },
-  { id: '4i2CvWa3uBs', title: 'Louvor 08', artist: 'O Único Salvador' },
+  { id: 'g54SFNNW2m8', title: 'Vai Ficar Tudo Bem', artist: 'Raquel Olliver' },
+  { id: 'fYq6rFPeMt4', title: 'Ninguém Explica Deus', artist: 'Gabriela Rocha' },
+  { id: 'qWmQlXY4pQY', title: 'Todavia Me Alegrarei', artist: 'Sarah Farias' },
+  { id: 'GMhCuHo3sNM', title: 'Meu Mestre', artist: 'Lázaro' },
+  { id: 'yhTwh1WEj70', title: 'Uma Nova História', artist: 'Fernandinho' },
+  { id: 'qVtAq1d3KBw', title: 'Sem Palavras', artist: 'Cassiane' },
+  { id: 'aBlwnOwSmQs', title: 'Tá Chorando Por Quê?', artist: 'Jeyzer Maia' },
+  { id: 'yjvDi6sX7cU', title: 'Acalma Minha Tempestade', artist: 'Frei Gilson' },
 ];
 
 export default function Louvores() {
