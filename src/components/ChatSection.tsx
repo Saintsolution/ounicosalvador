@@ -119,8 +119,8 @@ export default function ChatSection() {
         </div>
 
         <div className="flex gap-6 items-start flex-col md:flex-row">
-          <div className="md:w-44 flex-shrink-0 flex flex-col items-center">
-            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-amber-300/40 shadow-xl shadow-amber-300/10 mb-3 bg-[#061428]">
+          <div className="w-full md:w-44 flex-shrink-0 flex flex-col items-center justify-center">
+  <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-amber-300/40 shadow-xl shadow-amber-300/10 mb-3 bg-[#061428] mx-auto">
               <img
                 src="/apostolo.png"
                 alt="Apóstolo de Cristo"
