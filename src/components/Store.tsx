@@ -1,5 +1,81 @@
 import { ShoppingBag, ArrowRight } from 'lucide-react';
 
+// --- 1. ÁREA DE CONFIGURAÇÃO (Altere os dados aqui) ---
+
+const LIVROS_ITEMS = [
+  {
+    title: 'Café com Deus Pai Vol. 6 - 2026: Porções Diárias de Amor',
+    description: 'Que tal desfrutar de um momento íntimo com alguém que te ama e tem as respostas para todas as suas aflições? Essa é a experiência que você encontra em cada página de Café com Deus Pai. ',
+    price: 'R$ 35,00',
+    image: 'https://m.media-amazon.com/images/I/61YmetiyksL._SY522_.jpg',
+    link: 'https://amzn.to/4u45UC8', // Link para a página específica
+  },
+  {
+    title: 'Bíblia de Estudo Thomas Nelson NVI, Capa luxo azul, Leitura Perfeita | Bíblia com mais de 50 mil recursos',
+    description: 'A Bíblia de Estudo Thomas Nelson (BETN) é um marco na história das Bíblias comentadas. Diferentemente de outras Bíblias de estudo, a BETN tem como fio guia a teologia bíblica.',
+    price: 'R$ 241,46',
+    image: 'https://m.media-amazon.com/images/I/51Tjn7my04L._SY522_.jpg',
+    link: 'https://amzn.to/4tjznGR',
+  },
+  {
+    title: 'Cristianismo puro e simples Capa dura',
+    description: 'Em um dos períodos mais sombrios da humanidade, a Segunda Guerra Mundial, C.S. Lewis foi convidado pela BBC a fazer uma série de palestras pelo rádio com o intuito de explicar bases da fé cristã de forma simples e clara.',
+    price: 'R$ 32,10',
+    image: 'https://m.media-amazon.com/images/I/91WAGXw7Y4L._SY522_.jpg',
+    link: 'https://amzn.to/4nkRLhn',
+  },
+];
+
+const DIGITAIS_ITEMS = [
+  {
+    title: 'Fundamentos da Fé Cristã - Por: Pastor Leandro Martinez',
+    description: 'O curso Fundamentos da Fé Cristã é uma jornada essencial para todos que desejam compreender com profundidade as bases da fé cristã.',
+    price: 'R$ 197,00',
+    image: 'https://static-media.hotmart.com/TV4K9XloJdDKV9dWnLkmJ156Nlg=/filters:quality(100):format(webp)/klickart-prod/uploads/media/file/9405358/fundamentos_por_pr.jpg',
+    link: 'https://go.hotmart.com/Q105763225D',
+  },
+  {
+    title: 'O Panorama Bíblico Completo – Guia de Estudo da Bíblia de A a Z',
+    description: 'O Panorama Bíblico Completo é um eBook digital com 280 páginas de conteúdo profundo, prático e transformador, que conduz o leitor em uma jornada de Gênesis a Apocalipse, explicando a Bíblia de forma clara e acessível.',
+    price: 'R$ 39,90',
+    image: 'https://static-media.hotmart.com/1c8aESk_lgJ-ZFmBv7urAfQmZ4c=/filters:background_color(white)/hotmart/product_pictures/6fed0346-466e-4ce2-ad4f-44c113517fb2/2.jpg',
+    link: 'https://go.hotmart.com/X105763319V',
+  },
+  {
+    title: 'COMBO EXCLUSIVO - 7 EBOOKS PARA SUA LIBERTAÇÃO PESSOAL E ESPIRITUAL!',
+    description: 'Você sente que há algo te prendendo e quer conquistar a verdadeira liberdade? Chegou a hora de romper com as limitações e avançar em direção ao seu propósito! ',
+    price: 'R$ 77,00',
+    image: 'https://static-media.hotmart.com/Ep_BExb-Hdk61YHGtKOnxQrUm2U=/filters:background_color(white)/hotmart/product_pictures/ae595092-bfae-490a-8684-7baa1c003208/Designsemnome4.png',
+    link: 'https://go.hotmart.com/I105763407I?dp=1',
+  },
+];
+
+const NOVIDADES_ITEMS = [
+  {
+    title: 'Camiseta Não Temas',
+    description: 'Uma peça de fé para vestir coragem e esperança.',
+    price: 'R$ 79,00',
+    image: '/objeto01.png',
+    link: '/novidades',
+  },
+  {
+    title: 'Adesivos Sortidos (10)',
+    description: 'Mensagens cristãs para compartilhar luz em pequenos detalhes.',
+    price: 'R$ 10,00',
+    image: '/objeto02.png',
+    link: '/novidades',
+  },
+  {
+    title: 'Camiseta Eu Nasci de Novo',
+    description: 'Uma declaração de renovação, fé e nova caminhada.',
+    price: 'R$ 59,00',
+    image: '/objeto03.png',
+    link: '/novidades',
+  },
+];
+
+// --- 2. DEFINIÇÃO DE ESTRUTURA ---
+
 interface Product {
   title: string;
   description: string;
@@ -20,91 +96,27 @@ const sections: Section[] = [
   {
     title: 'Livros',
     subtitle: 'Leituras para fortalecer sua fé e sua caminhada.',
-    pageLink: '/livros',
+    pageLink: '/livros', // Link do botão principal da seção
     buttonLabel: 'Ver livros',
-    items: [
-      {
-        title: 'Onde Está Seu Coração?',
-        description: 'Uma reflexão sobre prioridades, fé e escolhas da alma.',
-        price: 'R$ 45,00',
-        image: '/livro01.png',
-        link: '/livros',
-      },
-      {
-        title: 'Eu e Minha Boca Grande',
-        description: 'Um chamado ao domínio da língua e à sabedoria no falar.',
-        price: 'R$ 39,00',
-        image: '/livro02.png',
-        link: '/livros',
-      },
-      {
-        title: 'Paulo, o Maior Líder do Cristianismo',
-        description: 'A jornada, coragem e liderança espiritual do apóstolo Paulo.',
-        price: 'R$ 69,00',
-        image: '/livro03.png',
-        link: '/livros',
-      },
-    ],
+    items: LIVROS_ITEMS,
   },
   {
     title: 'Produtos Digitais',
     subtitle: 'PDFs e devocionais para oração, estudo e reflexão diária.',
     pageLink: '/produtos-digitais',
     buttonLabel: 'Ver digitais',
-    items: [
-      {
-        title: 'Uma Vida com Propósitos',
-        description: 'Um guia digital para alinhar sua rotina com fé e direção.',
-        price: 'R$ 25,00',
-        image: '/pdf01.png',
-        link: '/produtos-digitais',
-      },
-      {
-        title: 'Pão Diário',
-        description: 'Reflexões simples para alimentar o coração todos os dias.',
-        price: 'R$ 39,00',
-        image: '/pdf02.png',
-        link: '/produtos-digitais',
-      },
-      {
-        title: 'Bom Dia Espírito Santo',
-        description: 'Meditações para começar o dia com presença, paz e oração.',
-        price: 'R$ 29,00',
-        image: '/pdf03.png',
-        link: '/produtos-digitais',
-      },
-    ],
+    items: DIGITAIS_ITEMS,
   },
   {
     title: 'Novidades',
     subtitle: 'Objetos, camisetas, brindes e itens especiais.',
     pageLink: '/novidades',
     buttonLabel: 'Ver novidades',
-    items: [
-      {
-        title: 'Camiseta Não Temas',
-        description: 'Uma peça de fé para vestir coragem e esperança.',
-        price: 'R$ 79,00',
-        image: '/objeto01.png',
-        link: '/novidades',
-      },
-      {
-        title: 'Adesivos Sortidos (10)',
-        description: 'Mensagens cristãs para compartilhar luz em pequenos detalhes.',
-        price: 'R$ 10,00',
-        image: '/objeto02.png',
-        link: '/novidades',
-      },
-      {
-        title: 'Camiseta Eu Nasci de Novo',
-        description: 'Uma declaração de renovação, fé e nova caminhada.',
-        price: 'R$ 59,00',
-        image: '/objeto03.png',
-        link: '/novidades',
-      },
-    ],
+    items: NOVIDADES_ITEMS,
   },
 ];
+
+// --- 3. COMPONENTE VISUAL ---
 
 export default function Store() {
   return (
@@ -113,50 +125,36 @@ export default function Store() {
       className="scroll-mt-20 py-20 bg-gradient-to-b from-[#020b18] via-[#061428] to-[#020b18]"
     >
       <div className="max-w-6xl mx-auto px-4">
+        {/* Header */}
         <div className="text-center mb-14">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="h-px flex-1 bg-amber-300/25" />
             <ShoppingBag size={22} className="text-amber-300" />
             <div className="h-px flex-1 bg-amber-300/25" />
           </div>
-
-          <h2
-            className="text-4xl font-bold text-amber-100 mb-3"
-            style={{ fontFamily: "'Cinzel', serif" }}
-          >
+          <h2 className="text-4xl font-bold text-amber-100 mb-3" style={{ fontFamily: "'Cinzel', serif" }}>
             Loja
           </h2>
-
-          <p
-            className="text-stone-400 max-w-2xl mx-auto text-base"
-            style={{ fontFamily: "'Lora', serif" }}
-          >
+          <p className="text-stone-400 max-w-2xl mx-auto text-base" style={{ fontFamily: "'Lora', serif" }}>
             Livros, conteúdos digitais e objetos para fortalecer sua caminhada espiritual.
           </p>
         </div>
 
+        {/* Sections */}
         <div className="space-y-16">
           {sections.map((section) => (
             <div key={section.title}>
               <div className="mb-7 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
                 <div>
                   <a href={section.pageLink}>
-                    <h3
-                      className="text-2xl md:text-3xl text-amber-200 hover:text-amber-100 transition-colors"
-                      style={{ fontFamily: "'Cinzel', serif" }}
-                    >
+                    <h3 className="text-2xl md:text-3xl text-amber-200 hover:text-amber-100 transition-colors" style={{ fontFamily: "'Cinzel', serif" }}>
                       {section.title}
                     </h3>
                   </a>
-
-                  <p
-                    className="text-stone-400 text-sm md:text-base mt-2"
-                    style={{ fontFamily: "'Lora', serif" }}
-                  >
+                  <p className="text-stone-400 text-sm md:text-base mt-2" style={{ fontFamily: "'Lora', serif" }}>
                     {section.subtitle}
                   </p>
                 </div>
-
                 <a
                   href={section.pageLink}
                   className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-amber-300/25 text-amber-200 hover:bg-amber-300/10 hover:border-amber-300/50 transition-all text-sm font-semibold"
@@ -166,6 +164,7 @@ export default function Store() {
                 </a>
               </div>
 
+              {/* Product Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {section.items.map((product) => (
                   <a
@@ -181,30 +180,17 @@ export default function Store() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#020b18]/65 via-transparent to-transparent" />
                     </div>
-
                     <div className="p-5 flex flex-col flex-1">
-                      <h4
-                        className="text-amber-100 text-lg mb-2 group-hover:text-amber-200 transition-colors"
-                        style={{ fontFamily: "'Cinzel', serif" }}
-                      >
+                      <h4 className="text-amber-100 text-lg mb-2 group-hover:text-amber-200 transition-colors" style={{ fontFamily: "'Cinzel', serif" }}>
                         {product.title}
                       </h4>
-
-                      <p
-                        className="text-stone-400 text-sm leading-relaxed mb-5 flex-1"
-                        style={{ fontFamily: "'Lora', serif" }}
-                      >
+                      <p className="text-stone-400 text-sm leading-relaxed mb-5 flex-1" style={{ fontFamily: "'Lora', serif" }}>
                         {product.description}
                       </p>
-
                       <div className="flex items-center justify-between gap-3">
-                        <span
-                          className="text-amber-300 font-bold text-xl"
-                          style={{ fontFamily: "'Cinzel', serif" }}
-                        >
+                        <span className="text-amber-300 font-bold text-xl" style={{ fontFamily: "'Cinzel', serif" }}>
                           {product.price}
                         </span>
-
                         <span className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-300 text-[#020b18] group-hover:bg-amber-200 transition-all duration-300 text-sm font-semibold">
                           Ver
                           <ArrowRight size={14} />
