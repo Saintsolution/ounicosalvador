@@ -6,8 +6,3 @@ Allow: /
 
 User-agent: Facebot
 Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-Sitemap: https://ounicosalvador.netlify.app/sitemap.xml
