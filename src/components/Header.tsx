@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Cross } from 'lucide-react';
 
 const navItems = [
-  { label: 'Início', href: '#inicio' },
+  { label: 'Início', href: '#' },
   { label: 'Conversa com o Mestre', href: '#conversa' },
   { label: 'Palavra do Dia', href: '#palavra' },
   { label: 'Louvores', href: '#louvores' },
@@ -82,7 +82,7 @@ export default function Header() {
       >
         <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-14">
           <a
-            href="#inicio"
+            href="#"
             className="flex items-center gap-2 text-amber-300 font-bold tracking-widest text-xs sm:text-sm uppercase hover:text-amber-200 transition-colors"
             style={{ fontFamily: "'Cinzel', serif" }}
           >

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Header from './components/Header';
 import ChatSection from './components/ChatSection';
 import WordWheel from './components/WordWheel';
@@ -11,6 +12,14 @@ import Novidades from './pages/Novidades';
 
 export default function App() {
   const path = window.location.pathname;
+
+  // Garante que o site inicie no topo absoluto ao carregar
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+  }, []);
 
   if (path === '/livros') return <Livros />;
   if (path === '/produtos-digitais') return <ProdutosDigitais />;
