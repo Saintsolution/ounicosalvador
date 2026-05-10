@@ -122,7 +122,8 @@ export default function Store() {
   return (
     <section
       id="loja"
-      className="scroll-mt-20 py-20 bg-gradient-to-b from-[#020b18] via-[#061428] to-[#020b18]"
+      // Alterado de scroll-mt-20 para scroll-mt-24 para compensar a altura do header fixo
+      className="scroll-mt-24 py-20 bg-gradient-to-b from-[#020b18] via-[#061428] to-[#020b18]"
     >
       <div className="max-w-6xl mx-auto px-4">
         {/* Header */}

@@ -13,13 +13,26 @@ import Novidades from './pages/Novidades';
 export default function App() {
   const path = window.location.pathname;
 
-  // Garante que o site inicie no topo absoluto ao carregar
+  // Gerencia o scroll ao carregar a página ou voltar para a home
   useEffect(() => {
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
     }
-    window.scrollTo(0, 0);
-  }, []);
+
+    const hash = window.location.hash;
+    if (hash) {
+      // Se houver um #loja na URL, espera o componente montar e rola suavemente
+      const element = document.getElementById(hash.replace('#', ''));
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    } else {
+      // Se for carregamento limpo (sem #), garante o topo absoluto
+      window.scrollTo(0, 0);
+    }
+  }, [path]); // Executa sempre que o caminho mudar
 
   if (path === '/livros') return <Livros />;
   if (path === '/produtos-digitais') return <ProdutosDigitais />;
