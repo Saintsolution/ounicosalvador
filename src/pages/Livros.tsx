@@ -24,11 +24,18 @@ const LIVROS_ITEMS = [
     link: 'https://amzn.to/4nkRLhn',
   },
   {
-    title: 'O Peregrino - Edição Luxo',
-    description: 'A clássica alegoria de John Bunyan sobre a jornada da vida cristã, agora em uma edição especial para sua biblioteca.',
-    price: 'R$ 49,90',
-    image: 'https://m.media-amazon.com/images/I/81shY89662L._SY522_.jpg',
-    link: 'https://amzn.to/3ZInR5K',
+    title: 'Análise da inteligência de Jesus Cristo: Edição Especial reunindo os cinco títulos da coleção',
+    description: 'Aprendi com o Mestre dos Mestres que a arte de pensar é o tesouro dos sábios. Aprendi um pouco mais a pensar antes de reagir, a expor – e não impor – minhas ideias e a entender que cada pessoa é um ser único no palco da existência.',
+    price: 'R$ 54,63',
+    image: 'https://m.media-amazon.com/images/I/71NbojlizKL._SY522_.jpg',
+    link: 'https://amzn.to/4u35hsi',
+  },
+  {
+    title: 'Em defesa de cristo',
+    description: '“EM DEFESA DE CRISTO” mostra a investigação do cético Lee Strobel, jornalista ateu premiado que faz a cobertura dos tribunais de Chicago. Sua esposa Leslie decide seguir a Cristo, gerando nele uma grande inquietação.',
+    price: 'R$ 37,05',
+    image: 'https://m.media-amazon.com/images/I/71mKWBb2bYL._SY522_.jpg',
+    link: 'https://amzn.to/4d40LEb',
   },
 ];
 

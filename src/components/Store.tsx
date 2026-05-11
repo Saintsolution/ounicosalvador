@@ -52,25 +52,25 @@ const DIGITAIS_ITEMS = [
 
 const NOVIDADES_ITEMS = [
   {
-    title: 'Camiseta Não Temas',
-    description: 'Uma peça de fé para vestir coragem e esperança.',
-    price: 'R$ 79,00',
-    image: '/objeto01.png',
-    link: '/novidades',
+    title: 'Camiseta Jesus Vive',
+    description: 'Camiseta Masculina Jesus Vive Moda Evangélica Camisa 100% Algodão',
+    price: 'R$ 39,90',
+    image: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-lwbq36i6yjrma2@resize_w900_nl.webp',
+    link: 'https://s.shopee.com.br/1LcWP6XmGl?share_channel_code=1',
   },
   {
-    title: 'Adesivos Sortidos (10)',
-    description: 'Mensagens cristãs para compartilhar luz em pequenos detalhes.',
-    price: 'R$ 10,00',
-    image: '/objeto02.png',
-    link: '/novidades',
+    title: 'Camiseta Jesus Cristo',
+    description: 'Blusa Jesus Cristo Moda Evangélica Feminina Gospel 100% Algodão',
+    price: 'R$ 30,81',
+    image: 'https://down-br.img.susercontent.com/file/br-11134207-81z1k-meiovcpz943k14@resize_w900_nl.webp',
+    link: 'https://s.shopee.com.br/4VZYB2etSM?share_channel_code=1',
   },
   {
-    title: 'Camiseta Eu Nasci de Novo',
-    description: 'Uma declaração de renovação, fé e nova caminhada.',
-    price: 'R$ 59,00',
-    image: '/objeto03.png',
-    link: '/novidades',
+    title: 'Adesivos Cristãos',
+    description: 'Cartela Adesivo Vinil Cristão Gospel Jesus Biblia carro moto notebook bicicleta',
+    price: 'R$ 19,90',
+    image: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-lvdpl0grn8epce.webp',
+    link: 'https://s.shopee.com.br/70Gt9lvhmG?share_channel_code=1',
   },
 ];
 

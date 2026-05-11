@@ -23,6 +23,13 @@ const DIGITAIS_ITEMS = [
     image: 'https://static-media.hotmart.com/Ep_BExb-Hdk61YHGtKOnxQrUm2U=/filters:background_color(white)/hotmart/product_pictures/ae595092-bfae-490a-8684-7baa1c003208/Designsemnome4.png',
     link: 'https://go.hotmart.com/I105763407I?dp=1',
   },
+  {
+    title: '30 Dias com Deus - Devocional Diário Cristão',
+    description: 'Um devocional cristão com 30 dias de versículos, reflexões e orações guiadas para fortalecer sua fé, trazer paz ao coração e aproximar você de Deus todos os dias. Confira este PDF e deixe Deus falar ao seu coração.',
+    price: 'R$ 27,90',
+    image: 'https://static-media.hotmart.com/mX6-3_-BxatZKVECT4-aJeuNx20=/filters:background_color(white)/hotmart/product_pictures/9a29e15b-9048-4a2a-96e6-45777311bbee/01a08385929245d6a6e2ce36aa5030f5.jpeg',
+    link: 'https://go.hotmart.com/W105781121K',
+  },
 ];
 
 export default function ProdutosDigitais() {

@@ -3,32 +3,25 @@ import { ShoppingBag, ArrowRight, ArrowLeft } from 'lucide-react';
 
 const NOVIDADES_ITEMS = [
   {
-    title: 'Camiseta Não Temas',
-    description: 'Conforto e propósito em uma peça exclusiva para vestir sua coragem cristã.',
-    price: 'R$ 79,00',
-    image: '/objeto01.png',
-    link: '#',
+    title: 'Camiseta Jesus Vive',
+    description: 'Camiseta Masculina Jesus Vive Moda Evangélica Camisa 100% Algodão',
+    price: 'R$ 39,90',
+    image: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-lwbq36i6yjrma2@resize_w900_nl.webp',
+    link: 'https://s.shopee.com.br/1LcWP6XmGl?share_channel_code=1',
   },
   {
-    title: 'Adesivos Sortidos (10 unidades)',
-    description: 'Pequenos lembretes da luz divina para decorar seus objetos favoritos.',
-    price: 'R$ 10,00',
-    image: '/objeto02.png',
-    link: '#',
+    title: 'Camiseta Jesus Cristo',
+    description: 'Blusa Jesus Cristo Moda Evangélica Feminina Gospel 100% Algodão',
+    price: 'R$ 30,81',
+    image: 'https://down-br.img.susercontent.com/file/br-11134207-81z1k-meiovcpz943k14@resize_w900_nl.webp',
+    link: 'https://s.shopee.com.br/4VZYB2etSM?share_channel_code=1',
   },
   {
-    title: 'Camiseta Eu Nasci de Novo',
-    description: 'Uma declaração pública de renovação e compromisso com sua nova vida em Cristo.',
-    price: 'R$ 59,00',
-    image: '/objeto03.png',
-    link: '#',
-  },
-  {
-    title: 'Boné Fé Inabalável',
-    description: 'Acessório de alta qualidade com bordado minimalista para testemunhar sua fé.',
-    price: 'R$ 45,00',
-    image: '/objeto01.png', // Substitua pela imagem real depois
-    link: '#',
+    title: 'Adesivos Cristãos',
+    description: 'Cartela Adesivo Vinil Cristão Gospel Jesus Biblia carro moto notebook bicicleta',
+    price: 'R$ 19,90',
+    image: 'https://down-br.img.susercontent.com/file/br-11134207-7r98o-lvdpl0grn8epce.webp',
+    link: 'https://s.shopee.com.br/70Gt9lvhmG?share_channel_code=1',
   },
 ];
 
